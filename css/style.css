@@ -1,3 +1,6 @@
+/* ==================== */
+/* ESTILOS GERAIS */
+/* ==================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,26 +8,69 @@ body {
     background-color: #fffbf0;
 }
 
+/* ==================== */
+/* CABEÇALHO */
+/* ==================== */
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background: #ff9800;
     padding: 15px;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== */
+/* MENU DE NAVEGAÇÃO */
+/* ==================== */
+nav {
+    margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.4s;
 }
 
+/* Links gerais */
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #fff;
+    padding: 8px 12px;
+}
+
+/* Estilo hover do menu */
+nav ul li a:hover {
+    background-color: #ffcc80;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+/* ==================== */
+/* CARROSSEL */
+/* ==================== */
 .carrossel {
     text-align: center;
     padding: 20px;
@@ -35,6 +81,9 @@ nav ul li a {
     height: auto;
 }
 
+/* ==================== */
+/* SEÇÃO DE SERVIÇOS */
+/* ==================== */
 .servicos {
     display: flex;
     justify-content: space-around;
@@ -54,6 +103,9 @@ nav ul li a {
     height: 200px;
 }
 
+/* ==================== */
+/* DEPOIMENTOS */
+/* ==================== */
 .depoimentos {
     text-align: center;
     padding: 20px;
@@ -63,6 +115,9 @@ nav ul li a {
     margin-top: 10px;
 }
 
+/* ==================== */
+/* RODAPÉ */
+/* ==================== */
 footer {
     background: #ff9800;
     text-align: center;
