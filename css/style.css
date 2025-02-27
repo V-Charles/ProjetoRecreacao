@@ -121,6 +121,34 @@ nav ul li a:hover {
 footer {
     background: #ff9800;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: white;
 }
+
+/* Texto acima dos ícones */
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Contâiner dos ícones */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Ícones das redes sociais */
+.redes-sociais a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom */
+.redes-sociais a img:hover {
+    transform: scale(1.1);
+}
+
+
