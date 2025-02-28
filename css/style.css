@@ -116,6 +116,40 @@ nav ul li a:hover {
 }
 
 /* ==================== */
+/* Valores - página Sobre */
+/* ==================== */
+.valores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.valor-item {
+    /*display: flex;*/
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.valor-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.valor-item span {
+    font-weight: bold;
+    color: #ff9800;
+}
+
+/* Efeito de zoom */
+.sobre img:hover {
+    transform: scale(1.1);
+}
+
+/* ==================== */
 /* RODAPÉ */
 /* ==================== */
 footer {
