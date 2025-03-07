@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <main>
         <!-- Inicio div principal -->
         <div id="principal">
+
             <!-- Início cabeçalho -->
             <header>
                 <div class="logo">
@@ -25,26 +27,77 @@
                 </nav>
             </header>
             <!-- Fim cabeçalho -->
-            <section>
-                <div class="container-imagem">
-                    <div class="conteudo">
-                        <h1>Descrição</h1>
+
+            <!-- Conteúdo -->
+            <div class="conteudo">
+
+                <!-- Fundo branco -->
+                <div class="fundo-branco">
+
+                    <!-- Section apresentação -->
+                    <section class="apresentacao">
+                        <h1><span>Solicite Seu Orçamento Personalizado</span></h1><br>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            . Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                            irure dolor in reprehenderit in voluptate velit esse cillum 
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                             cupidatat non proident, sunt in culpa qui officia deserunt 
-                             mollit anim id est laborum
-                        </p>
-                    </div>
+                            Estamos prontos para atender às suas necessidades com soluções sob medida para o 
+                            seu projeto. Preencha o formulário abaixo com as informações desejadas, e 
+                            nossa equipe entrará em contato para apresentar um orçamento detalhado e 
+                            adequado ao que você precisa. Garantimos o melhor custo-benefício e qualidade 
+                            para transformar sua ideia em realidade.
+                        </p><br>
+                    </section>
+                    <!-- Fim Section apresentação -->
+                    
+                    <!-- Formularios -->
+                    <section class="formularios">
+
+                        <!-- Formulario 1 -->
+                        <form class="formulario">
+
+                            <div class="formulario1">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome"><br><br>
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required="required"><br><br>
+
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" id="telefone" name="telefone"><br><br>
+
+                                <label for="endereco">Endereço:</label>
+                                <input type="text" id="endereco" name="endereco"><br><br>
+
+                                <label for="nascimento">Data de nascimento:</label>
+                                <input type="date" id="nascimento" name="nascimento"><br><br>
+                            </div>
+
+                            <div class="formulario2">
+                                <label for="obs">Observações:</label>
+                                <input type="text" id="obs" name="obs"><br><br>
+
+                                <label for="mediaidade">Idade média dos participantes:</label>
+                                <input type="text" id="mediaidade" name="mediaidade"><br><br>
+
+                                <input class="botao" type="submit" name="" value="Solicitar">
+
+                            </div>
+                            
+                        </form>
+                        <!-- Fim formulario 1 -->
+
+                    </section>
+                    <!-- Fim Formularios -->
+
                 </div>
-            </section>
+                <!-- Fim fundo branco -->
+
+            </div>
+            <!-- Fim Conteúdo -->
+
         </div>
         <!-- Fim div principal -->
+
     </main>
+
     <footer>
         <p>Nos acompanhe nas redes sociais:</p>
         <div class="redes-sociais">
