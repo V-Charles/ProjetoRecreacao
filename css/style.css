@@ -136,43 +136,43 @@ footer p {
 /* Página Inicio */
 /* ==================== */
 .carrossel img {
-    width: 300px;
-    height: 200px;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/*
-.conteudo img {
     width: 80%;
-    height: auto;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-}*/
-
-.carrossel img {
-    width: 50%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-/* Serviços */
-.servicos {
-    padding: 10px 0;
 }
 
 .servico {
     display: flex;
     align-items: center;
     gap: 20px;
-    max-width: 50%;
+    max-width: 80%;
     margin: 30px auto;
     padding: 10px;
     border-radius: 10px;
     background-color: #FEBA31;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .servico {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .carrossel img {
+        width: 80;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .servicos img {
@@ -246,7 +246,7 @@ footer p {
     object-fit: cover;
     border-radius: 50%;
     margin-right: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .depoimento:hover {
@@ -281,7 +281,7 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 27px 0 27px;
+    padding: 0 20px;
 }
 
 .fotos img {
@@ -352,6 +352,19 @@ footer p {
     border-radius: 10px;
     background-color: #FEBA31;
     gap: 10px;
+}
+
+@media (max-width: 480px) {
+    .formularios {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+        width: 100%;
+    }
 }
 
 .formulario {
